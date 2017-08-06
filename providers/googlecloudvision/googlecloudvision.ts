@@ -20,8 +20,8 @@ export class GooglecloudvisionProvider {
         {
           'image':{ 'content':base64Img },
           'features':[
-            {'type':type,'maxResults':1}
-          ] 
+            {'type':type}
+          ]
         }
       ]
     }

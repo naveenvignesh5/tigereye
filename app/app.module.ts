@@ -7,13 +7,11 @@ import { Camera } from '@ionic-native/camera';
 import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { GooglecloudvisionProvider } from '../providers/googlecloudvision/googlecloudvision';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   imports: [
     HttpModule,
@@ -22,8 +20,7 @@ import { GooglecloudvisionProvider } from '../providers/googlecloudvision/google
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   providers: [
     Camera,

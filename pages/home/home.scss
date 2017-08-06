@@ -10,4 +10,13 @@ page-home {
     display: block;
     width: 75%; height: auto;
   }
+
+  ion-menu img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  button {
+    border-radius: 10px;
+  }
 }
