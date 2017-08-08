@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Your Results</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-label>{{item.description}}</ion-label>
+      <ion-badge item-end>{{item.score}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

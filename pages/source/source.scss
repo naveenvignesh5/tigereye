@@ -1,0 +1,21 @@
+page-source {
+  h1 {
+    text-align: center;
+    font-family: Bangers-Regular;
+    color: #676767;
+  }
+
+  .list {
+    text-align: center;
+    font-family: cursive;
+    letter-spacing: .1em;
+    font-size: 12pt;
+    color: map-get($colors, primary);
+  }
+
+  button {
+    border-radius: 20px !important;
+    font-family: Bangers-Regular;
+    font-size: 13pt !important;
+  }
+}

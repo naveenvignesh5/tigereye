@@ -39,8 +39,7 @@ export class HomePage {
     this.camera.getPicture(this.options).then((picData)=>{
       this.showLoading();
       this.googleApi.getImageInfo(picData,'LABEL_DETECTION').subscribe((data)=>{
-        this.loading.dismiss();
-        this.showAlert('Obtained Data',data.responses[0].labelAnnotations[0].description);
+          this.navCtrl.push('ImgresultPage',{'data':data.responses[0].labelAnnotations});
       },err=>{
         this.loading.dismiss();
         this.toast('Error in obtaining text');
@@ -74,5 +73,9 @@ export class HomePage {
       title:title,message:msg,buttons:[{text:'Ok'}]
     });
     alert.present();
+  }
+
+  gotoPage(page) {
+    this.navCtrl.push(page);
   }
 }

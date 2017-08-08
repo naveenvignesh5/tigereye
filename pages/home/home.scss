@@ -5,12 +5,17 @@ page-home {
     font-style: monospace !important;
   }
 
-  img {
+  .mainlogo {
     margin: 20px auto;
     display: block;
-    width: 75%; height: auto;
+    width: 65%; height: auto;
   }
 
+  .sublogo {
+    margin: 10px auto;
+    display: block;
+    width: 70%; height: auto;
+  }
   ion-menu img {
     margin: 0 auto;
     display: block;
@@ -18,5 +23,12 @@ page-home {
 
   button {
     border-radius: 10px;
+  }
+
+  ion-menu ion-item {
+    font-family: Bangers-Regular;
+    font-size: 14pt;
+    letter-spacing: .1em;
+    color: #FA8072 !important;
   }
 }
