@@ -2,15 +2,11 @@
   <ion-content>
     <img src="assets/img/companylogo.png"/>
     <ion-list>
-      <ion-item menuClose>
-        <ion-icon item-left name="help"></ion-icon>
-        <ion-label>How to use</ion-label>
-      </ion-item>
       <ion-item menuClose (click)="gotoPage('SourcePage')">
         <ion-icon item-left name="code"></ion-icon>
         <ion-label>The Source</ion-label>
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="gotoPage('AboutmePage')">
         <ion-icon item-left name="person"></ion-icon>
         <ion-label>About Me</ion-label>
       </ion-item>

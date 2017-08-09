@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Developer Board</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="mainblock">
+    Hello folks. I am Naveen Vignesh. I am CSE Engg. Student.
+    I have created this project as an ionic learning project
+    for fellow developers and enthusiasts. I hope you guys enjoy
+    the app. I have given my contacts below.
+  </div>
+  <div class="subblock">
+    Hope you enjoy !!!
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <button ion-button icon-only (click)="gotolink('linkedin')"><ion-icon name="logo-linkedin"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button icon-only color="danger" (click)="gotolink('googleplus')"><ion-icon name="logo-googleplus"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button icon-only color="facebook" (click)="gotolink('facebook')"><ion-icon name="logo-facebook"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button icon-only color="github" (click)="gotolink('github')"><ion-icon name="logo-github"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

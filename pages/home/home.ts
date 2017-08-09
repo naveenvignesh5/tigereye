@@ -40,6 +40,7 @@ export class HomePage {
       this.showLoading();
       this.googleApi.getImageInfo(picData,'LABEL_DETECTION').subscribe((data)=>{
           this.navCtrl.push('ImgresultPage',{'data':data.responses[0].labelAnnotations});
+          this.loading.dismiss();
       },err=>{
         this.loading.dismiss();
         this.toast('Error in obtaining text');

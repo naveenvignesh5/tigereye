@@ -1,0 +1,21 @@
+page-aboutme {
+  div {
+    text-align: center;
+  }
+
+  .mainblock {
+    font-family: Pacifico-Regular;
+    font-size: 14pt;
+    letter-spacing: .1em;
+    color: #676767;
+  }
+
+  .subblock {
+    font-family: Bangers-Regular;
+    font-size: 15pt;
+    font-weight: bolder;
+    color: map-get($colors,primary);
+    letter-spacing: .1em;
+    margin: 10px;
+  }
+}

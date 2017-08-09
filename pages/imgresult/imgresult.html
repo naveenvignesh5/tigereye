@@ -6,6 +6,10 @@
 
 <ion-content padding>
   <ion-list>
+    <ion-item>
+      <ion-label>Content</ion-label>
+      <ion-label>Probability</ion-label>
+    </ion-item>
     <ion-item *ngFor="let item of items">
       <ion-label>{{item.description}}</ion-label>
       <ion-badge item-end>{{item.score}}</ion-badge>

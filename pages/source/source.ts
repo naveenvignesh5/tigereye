@@ -9,4 +9,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SourcePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  gotogitrepo() {
+    window.open('https://bitbucket.org/theace56/tiger-eye','_system');
+  }
 }
