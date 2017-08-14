@@ -1,11 +1,11 @@
 <ion-menu [content]="homemenu">
-  <ion-content>
+  <ion-content padding>
     <img src="assets/img/companylogo.png"/>
     <ion-list>
       <ion-item menuClose (click)="gotoPage('SourcePage')">
         <ion-icon item-left name="code"></ion-icon>
         <ion-label>The Source</ion-label>
-      </ion-item>
+      </ion-item><br />
       <ion-item menuClose (click)="gotoPage('AboutmePage')">
         <ion-icon item-left name="person"></ion-icon>
         <ion-label>About Me</ion-label>
@@ -27,14 +27,29 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="mainlogo">
-    <img src="assets/img/icon.png"/>
-  </div>
   <div>
     <button ion-item color="danger" (click)="getOCR()">OCR</button><br />
     <button ion-item color="secondary" (click)="getImageType()">Image Recognition</button>
+  </div><br />
+  <div>
+    <ion-card>
+      <ion-card-title><u>Operation from File</u></ion-card-title>
+      <ion-card-content class="card-content">
+        <ion-list radio-group [(ngModel)]="imgChoice">
+          <ion-item>
+            <ion-label>OCR</ion-label>
+            <ion-radio value="ocr" checked></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Image Recognition</ion-label>
+            <ion-radio value="imgrec"></ion-radio>
+          </ion-item>
+        </ion-list><br />
+        <button ion-item color="primary" (click)="pickImg()">Pick Image</button>
+      </ion-card-content>
+    </ion-card>
   </div>
-  <div class="sublogo">
-    <img src="assets/img/googlelogo.png"/>
+  <div>
+    <img src="assets/img/googlelogo.png" class="sublogo"/>
   </div>
 </ion-content>

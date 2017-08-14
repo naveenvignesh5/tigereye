@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Camera } from '@ionic-native/camera';
 import { HttpModule } from '@angular/http';
+import { ImagePicker } from '@ionic-native/image-picker';
 
 import { MyApp } from './app.component';
 import { GooglecloudvisionProvider } from '../providers/googlecloudvision/googlecloudvision';
@@ -23,6 +24,7 @@ import { GooglecloudvisionProvider } from '../providers/googlecloudvision/google
     MyApp
   ],
   providers: [
+    ImagePicker,
     Camera,
     StatusBar,
     SplashScreen,

@@ -5,6 +5,10 @@ page-home {
     font-style: monospace !important;
   }
 
+  ion-menu ion-content {
+    background-image: url('../assets/img/cardbk.jpg');
+  }
+
   .mainlogo {
     margin: 20px auto;
     display: block;
@@ -21,6 +25,21 @@ page-home {
     display: block;
   }
 
+  ion-card-title {
+    text-align: center;
+    font-size: 14pt;
+    font-family:Pacifico-Regular;
+    color: #4455ae !important;
+  }
+
+  ion-card {
+    border-radius: 15px !important;
+    background-image: url('../assets/img/cardbk.jpg') !important;
+  }
+
+  ion-card ion-list {
+    border-radius: 15px !important;
+  }
   button {
     border-radius: 10px;
   }
@@ -29,6 +48,8 @@ page-home {
     font-family: Bangers-Regular;
     font-size: 14pt;
     letter-spacing: .1em;
-    color: #FA8072 !important;
+    color: #fff !important;
+    border-radius: 15px;
+    background-color: #676767 !important;
   }
 }
